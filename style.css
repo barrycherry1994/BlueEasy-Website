@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Navigation Menu*/
+.container-1 {
+    padding: 40px 200px;
+}
+#company-name {
+    display: inline-block;
+    color: white;
+    transition: .5s;
+}
+
+nav {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    background: grey;
+}
+
+.nav-bar  {
+    display: inline;
+
+}
+nav span {
+    color: #00ccff;
+}
+
+.nav-bar ul {
+    float: right;
+    margin-top: 5px;
+
+}
+.nav-bar li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid grey;
+    transition: .5s;
+}
+
+li {
+    transition: .5s;
+}
+#company-name:hover{
+    color: #00ccff;
+    transition: .5s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+
+
+li:hover {
+    transition: .5s;
+    transition-timing-function: ease-in-out;
+}
+
+a:hover {
+    color:#00ccff;
+    border: 2px solid #00ccff;
+    transition: .5s;
+    padding: 0 10px;
+}
+
+/*clearfix*/
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
