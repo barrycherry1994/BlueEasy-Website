@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: none;
+}
+
+body {
+    height: 3000px;
 }
 /*Navigation Menu*/
 .container-1 {
@@ -27,6 +30,7 @@ nav {
 }
 nav span {
     color: #00ccff;
+    transition: .5s;
 }
 
 .nav-menu ul {
@@ -56,6 +60,11 @@ li {
     cursor: pointer;
 }
 
+.container-1 span:hover {
+    color:white;
+    transition: .5s;
+    transition-timing-function: ease-in-out;
+}
 
 li:hover {
     transition: .5s;
@@ -118,6 +127,8 @@ a:hover {
     transition: .5s;
     cursor: pointer;
 }
+/*End of Hero*/
+
 /*Services*/
 .container-2 {
     padding: 50px 100px;
@@ -142,6 +153,13 @@ a:hover {
     width: 40px;
     height:40px;
     margin: 10px 0;
+    transition: .5s;
+}
+
+.service-icon:hover {
+    transform: rotate(360deg);
+    transition: .5s;
+    transition-timing-function: ease-in-out;
 }
 
 .grid {
@@ -155,7 +173,51 @@ a:hover {
 .grid-box h1 {
     margin-bottom: 10px;
 }
+/*End of Services*/
 
+.container-3 {
+    padding: 50px 100px;
+    color: grey;
+}
+
+.portfolio h1 {
+    display: inline-block;
+    position: absolute;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 100;
+    border-bottom: .5px solid grey;
+}
+
+.portfolio-nav ul {
+    display: inline-block;
+    float: right;
+    
+}
+.portfolio-nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 5px;
+}
+
+.portfolio-nav a {
+    color: grey;
+}
+
+.portfolio-nav a:hover {
+    color: #00ccff;
+}
+
+.portfolio-gridbox {
+    position: relative;
+    margin-top: 5em;
+}
+.portfolio-gridbox img {
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+    filter: grayscale(100%);
+    transition: .5s;
+}
 
 /*clearfix*/
 
