@@ -1,12 +1,9 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    height: 3000px;
-}
 /*Navigation Menu*/
 .container-1 {
     padding: 40px 200px;
@@ -71,7 +68,7 @@ li:hover {
     transition-timing-function: ease-in-out;
 }
 
-a:hover {
+nav a:hover {
     color:#00ccff;
     border: 2px solid #00ccff;
     transition: .5s;
@@ -219,6 +216,59 @@ a:hover {
     transition: .5s;
 }
 
+/*End of Portfolio*/
+
+/*Just a Section*/
+
+.container-4 {
+    background: #505F66;
+    padding: 40px 100px;
+}
+
+.justASection {
+    position: relative;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 100;
+    color:white;
+    margin: 2px 0;
+    display: flex;
+}
+
+.justASection h1 {
+    display: inline-block;
+    border-bottom: .5px solid white;
+}
+p {
+    margin: 20px 0;
+}
+
+.justASection button {
+    color:#242a33;
+    letter-spacing: 1.5px;
+    padding:  5px 20px;
+    background: none;
+    outline: none;
+    border: 1px solid #242a33;
+    font-family: 'Questrial', sans-serif;
+    font-size: 16px;
+    transition: .5s;
+}
+
+.justASection button:hover {
+    color:white;
+    border: 1px solid white;
+    transition:.5s;
+}
+
+.video {
+    margin-left: 50px;
+}
+/*End of Just a Section*/
+
+.container-5 {
+    padding: 50px 100px;
+    background: #00ccff;
+}
 /*clearfix*/
 
 .group:after {
@@ -226,3 +276,4 @@ a:hover {
   display: table;
   clear: both;
 }
+
