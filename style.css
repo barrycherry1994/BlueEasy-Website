@@ -266,8 +266,82 @@ p {
 /*End of Just a Section*/
 
 .container-5 {
-    padding: 50px 100px;
+    padding: 80px 100px;
     background: #00ccff;
+}
+
+.twitter,
+.tweet {
+    font-family: 'Questrial', sans-serif;
+    font-weight: 100;
+    color:white;
+}
+
+.twitter h1 {
+    display: inline-block;
+    border-bottom: .5px solid white;
+    letter-spacing: 1.5px;
+}
+
+.twitter img {
+    height:30px;
+    width: 30px;
+    float: right;
+}
+/*End of twitter section*/
+
+.container-6 {
+    padding: 100px 100px;
+    background:linear-gradient(
+      rgba(75, 95, 130, 0.5), 
+      rgba(75, 95, 130, 0.5)
+    ), url(images/photoman-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Questrial', sans-serif;
+}
+
+.who-is-section {
+    display: flex;
+}
+
+.who-is-p {
+    margin-right: 50px;
+}
+
+.who-is-social img {
+    width: 50px;
+    height:50px;
+    display: inline-block;
+    border:1px solid white;
+    padding: 10px;
+    margin: 5px;   
+}
+
+.logo {
+    transition:.5s;
+}
+
+.twitter-logo:hover {
+    background: #00ccff;
+    transition: .5s;
+}
+
+.google-logo:hover {
+    background: #d12e2e;
+    transition: .5s;
+}
+
+.dribbble-logo:hover {
+    background:#ea4c89;
+    transition: .5s;
+}
+
+.tea-logo:hover {
+    background: #3ab76c;
+    transition: .5s;
 }
 /*clearfix*/
 
