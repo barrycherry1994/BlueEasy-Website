@@ -355,6 +355,7 @@ p {
  color: gray;
  font-family: 'Questrial', sans-serif;
  width: 100%;
+ height: 450px;
 }
 
 .testimonials h1 {
@@ -823,6 +824,64 @@ display: inline-block;
 }
 
 /*End Of Testimonials*/
+.container-8 {
+    padding: 100px 100px;
+    background:linear-gradient(
+      rgba(75, 95, 130, 0.5), 
+      rgba(75, 95, 130, 0.5)
+    ), url(images/coffee-cup.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Questrial', sans-serif;
+}
+
+.contact-input {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.name,
+.email {
+    margin-top: 10px;
+}
+
+input {
+    margin-top: 5px;
+    width: 90%;
+    padding: 10px;
+    background: none;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 20px;
+}
+
+.contact-flex {
+    display: flex;
+}
+
+textarea {
+    width: 100%;
+    height: 250px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+    font-size: 20px;
+    outline: none;
+    margin-top: 10px;
+}
+
+.message button {
+    margin-top: 10px;
+    padding: 10px 100px;
+    background: #00ccff;
+    border: none;
+    color: white;
+    outline:none;
+    cursor: pointer;
+}
 
 /*clearfix*/
 
