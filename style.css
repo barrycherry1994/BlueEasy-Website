@@ -82,17 +82,12 @@ nav a:hover {
     width: 100%;
 }
 .hero-image {
-    background: 
-    linear-gradient(
-      rgba(75, 95, 130, 0.5), 
-      rgba(75, 95, 130, 0.5)
-    ), url(images/blueasy-bg.jpg);
+    background: linear-gradient( rgba(75, 95, 130, 0.5), rgba(75, 95, 130, 0.5) ), url(images/blueasy-bg.jpg);
     background-position: top;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 0;
-    padding-top: 56%;
+    height: 700px;
     position: relative;
     margin-top: -7.5em;
 }
@@ -113,10 +108,11 @@ nav a:hover {
 .hero-text h1 {
     background: rgba(0,0,0,0.5);
     display: inline-block;
-    margin-bottom: 5px;
     font-weight: 100;
     padding: 5px;
     transition: .5s;
+    margin: 10px 20px 5px;
+
 }
 
 .hero-text h1:hover {
@@ -131,6 +127,7 @@ nav a:hover {
     padding: 50px 100px;
     background: #00ccff;
     border: none;
+    width: 100%;
 }
 
 .services {
@@ -175,6 +172,7 @@ nav a:hover {
 .container-3 {
     padding: 50px 100px;
     color: grey;
+    width: 100%;
 }
 
 .portfolio h1 {
@@ -207,6 +205,13 @@ nav a:hover {
 .portfolio-gridbox {
     position: relative;
     margin-top: 5em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(200px,4fr));
+    grid-gap: 2.8em;
+    justify-content: center;
+    justify-items:center;
+    width: 100%;
+    
 }
 .portfolio-gridbox img {
     width: 250px;
@@ -223,6 +228,8 @@ nav a:hover {
 .container-4 {
     background: #505F66;
     padding: 40px 100px;
+    width: 100%;
+
 }
 
 .justASection {
@@ -268,6 +275,7 @@ p {
 .container-5 {
     padding: 80px 100px;
     background: #00ccff;
+    width: 100%;
 }
 
 .twitter,
@@ -302,6 +310,7 @@ p {
     background-size: cover;
     color: white;
     font-family: 'Questrial', sans-serif;
+    width: 100%;
 }
 
 .who-is-section {
@@ -835,6 +844,7 @@ display: inline-block;
     background-size: cover;
     color: white;
     font-family: 'Questrial', sans-serif;
+    width: 100%;
 }
 
 .contact-input {
@@ -882,12 +892,80 @@ textarea {
     outline:none;
     cursor: pointer;
 }
+/*End of Contact us*/
 
-/*clearfix*/
+footer nav {
+    background: #354044;
+    padding: 20px 100px;
 
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
+footer li {
+    display:inline-block;
+    padding:  0px 20px;
+    border-right: 1px solid #505F66;
+}
+
+footer li:last-child {
+    border: none;
+}
+
+footer a {
+    color: #505F66;
+}
+
+footer a:hover {
+    border: none;
+    margin: inherit;
+    padding: 0;
+    
+}
+
+@media (max-width:1120px) {
+    .justASection {
+        display: block;
+    }
+    
+    .video {
+        margin: 10px;
+    }
+    
+    iframe {
+        width: 100%;
+        height: 467px;
+    }
+}
+
+@media (max-width:1000px) {
+    
+    .container-1 {
+    padding: 35px;
+}
+    
+    #company-name {
+        display: block;
+        text-align: center;
+    }
+    .nav-menu ul {
+    float: right;
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width:850px) {
+    .portfolio h1 {
+        position: relative;
+        margin-bottom: 20px;
+    }
+    
+    .portfolio-nav {
+        float: left;
+        margin: 0;
+    }
+    
+    .contact-flex {
+        display: block;
+    }
+}
