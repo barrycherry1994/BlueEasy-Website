@@ -6,9 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Questrial" rel="stylesheet">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
-        <title>BlueEasy</title>
+        <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>        
+       <title>BlueEasy</title>
     </head>
+    
     <body>
        <div class="nav-bar">
             <nav>
@@ -29,6 +31,18 @@
                 </div>
             </nav>
         </div>
+        
+        <div class="mobile-navigation">
+        <div id="top-bar">
+            <img id="menu-button" src="images/hamburger-menu.svg" width="35px">       
+        </div>
+            <ul id="mobile-nav">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#services1">SERVICES</a></li>
+                <li><a href="#">FEATURES</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul> 
+    </div>    
         
         <div class="hero">
             <div class="hero-image">
@@ -106,10 +120,10 @@
                 <h1>JUST A SECTION</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero animi at ipsum iusto aliquam illum rem, similique sit, porro commodi. Ea laborum cumque incidunt molestiae, quia maxime dolore, officiis voluptas illo laboriosam adipisci corrupti dolores culpa illum sed, dignissimos iste minus non iusto quo corporis!</p>
                 <p>Ducimus culpa, minus officia odio similique fugiat vel expedita ipsum dignissimos cum, recusandae voluptates quasi?</p>
-                <a href><button>Visit Me</button></a>
+                <button><a href>Visit Me</a></button>
                 </div>
                     <div class="video">
-                        <iframe src="https://player.vimeo.com/video/250953833" width="600" height="267" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        <iframe src="https://player.vimeo.com/video/250953833" width="600" height="267" frameborder="0" allowfullscreen></iframe>
                 <!--SEASONS from sam yurkovich on Vimeo-->
                     </div>
             </div>
@@ -215,7 +229,7 @@
             <div class="message">
                 <span>MESSAGE</span>
                 <textarea rows="4" cols="50"></textarea>
-                <a href="#"><button>Message</button></a>
+                <button><a href="#">Message</a></button>
             </div>
         </div>
         
@@ -238,7 +252,14 @@
         
         
 <!--   Jquery     -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script>
+         $(function() {
+        $("#menu-button").click(function(){
+            $("#mobile-nav").toggle( 'display' );          
+        });
+    });
+    </script> 
+        
     </body>
 </html>
 
